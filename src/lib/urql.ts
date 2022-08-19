@@ -4,8 +4,8 @@ const isServerSide = typeof window === 'undefined';
 const ssrCache = ssrExchange({ isClient: !isServerSide });
 
 const client = createClient({
-    url: 'https://api-sa-east-1.hygraph.com/v2/cl70kgh061l8901ujcostd2i5/master',
-    exchanges: [dedupExchange, cacheExchange, ssrCache, fetchExchange],
+  url: 'https://api-us-east-1.graphcms.com/v2/ckznjebnw0duj01yy3iy0e44x/master',
+  exchanges: [dedupExchange, cacheExchange, ssrCache, fetchExchange],
 })
 
 export { client, ssrCache };
